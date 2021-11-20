@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    background-image: url("https://i.kym-cdn.com/entries/icons/facebook/000/026/152/gigachad.jpg");
+    object-fit: cover;
+}
+img{
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
