@@ -23,7 +23,7 @@ function countBmi(){
     p.push("female");
   }
   form.reset();
-  var bmi = Number(p[2])/(Number(p[1])/100*Number(p[1])/100);
+  var bmi = p[2]/(p[1]/100*p[1]/100);
       
   var result = '';
   if(bmi<18.5){
