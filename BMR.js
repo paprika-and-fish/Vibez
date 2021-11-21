@@ -26,21 +26,6 @@ function countBmr(){
   var bmr = 10*p[2]+6.25*p[1]-5*p[0]+5;
       
   var result = '';
-  if(bmr<=1926){
-    result = 'Sedentary: little or no exercise';
-     }else if(1926<bmr&&bmr<=2207){
-    result = 'Exercise 1-3 times/week';
-     }else if(2207<bmr&&bmr<=2351){
-    result = 'Exercise 4-5 times/week';
-     }else if(2351<bmr&&bmr<=2488){
-    result = 'Daily exercise or intense exercise 3-4 times/week';
-     }else if(2488<bmr&&bmr<=2769){
-    result = 'Intense exercise 6-7 times/week';
-     }else if(2769<bmr&&bmr<=3050){
-    result = 'Very intense exercise daily, or physical job';
-     }else if(3050<bmr){
-       result = 'U lyin dawg';
-     }
   
   var h1 = document.createElement("h1");
   var h2 = document.createElement("h2");
@@ -48,10 +33,12 @@ function countBmr(){
   var t = document.createTextNode(result);
   var b = document.createTextNode('BMR: ');
   var r = document.createTextNode(parseFloat(bmr).toFixed(2));
+  var c = document.createTextNode(' calories');
   
   h1.appendChild(t);
   h2.appendChild(b);
   h2.appendChild(r);
+  h2.appendChild(c);
   
   document.body.appendChild(h1);
   document.body.appendChild(h2);
