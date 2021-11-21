@@ -6,7 +6,7 @@ var female = document.getElementById("f");
 var form = document.getElementById("form");
 
 function validateForm(){
-  if(age.value=='' || height.value=='' || weight.value=='' || (male.checked==false && female.checked==false)){
+  if(Age.value=='' || Height.value=='' || Weight.value=='' || (male.checked==false && female.checked==false)){
     alert("All fields are required!");
     document.getElementById("submit").removeEventListener("click", countBmi);
   }else{
